@@ -5,4 +5,4 @@ the website allows registration, than saving locations for each user - we can vi
 
 for additional info, look for the readme file in the project folder.
 
-<div style="width:360px;max-width:100%;"><div style="height:0;padding-bottom:54.17%;position:relative;"><iframe width="360" height="195" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/5wypda"></iframe></div><p><a href="https://imgflip.com/gif/5wypda">via Imgflip</a></p></div>
+https://user-images.githubusercontent.com/72927733/145052576-d68414f4-8c0c-4460-89f1-b4c753231157.mp4
