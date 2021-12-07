@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Readme</title>
+</head>
+<body>
+<!-- Main content -->
+<h1>Internet Programming Course - Exercise 4</h1>
+<h2>Harel Savitzky</h2>
+<h4>Students:</h4>
+<ul>
+    <li>Harel Savitzky</li>
+    <li>ID 305390692</li>
+    <li>harelsavitzky@gmail.com</li>
+</ul>
+
+<h2>Execution</h2>
+<p>The submission is a WebStorm nodeJs.Express project</p>
+
+<h2>Assumptions</h2>
+<p>The site use bootstrap CDN therefore assumes an internet connection is available.<br>
+i used the node_modules:<br>
+    cookies-parser/cookies/express-session and of course all the necessary<br>
+    sqlite addons that we instructed by solange, therefore it needs to be installed in order<br>
+    for the program to run correctly
+</p>
+
+
+
+<h2>Other Notes</h2>
+<p>In this task we will create both the server side and the client side using the technologies<br>
+    that we learned, nodeJS(express), javascript, html, css, ajax, SQLite database.<br>
+    we will transform Ex.3 to a website with a registration and login<br>
+    we will save the users accounts and the locations that they enter in the database<br>
+    <br><br>
+    we will validate the registration form using HTML5,<br> and on the server side we will check if the email is already registered.<br>
+    after that we will validate the password on the client side -> we will check if it is at least 8 characters<br>
+    and if the passwords match the password confirmation.<br>
+    in the login page we will check that the email and password exist on the database.<br>
+    only then the user will be logged in and move to the weather site.<br>
+    in any page if we wont meet the requirements we will get an error message.<br>
+    on the weather site our email will be displayed above with a logout option next to it.<br>
+    there will be one more addon to the weather page which is the delete all locations button.<br><br>
+    other notes:<br>
+    *i have 2 readme file, one html on the project folder as instructed,<br>
+    and a copy of it as ejs, with a link on the registration page<br>
+    *if someone is trying to get to /weather (weather page),<br> and he is not logged in -> he will get back to registration page. <br>
+    *if trying to get to /password (password page),<br> he will go back to registration page,<br>
+    it means only way to get to password page is trough succesfuly passing registration page<br>
+    *as instructed by solange -> moving to registration/password/login pages<br> while logged in, will get us to weather page.<br>
+    *notice that almost every "get" handler will log us out,<br> so navigation this way will keep us safe from double connections from same session<br>
+    not make sense to get to password page not from registration form<br>
+    *i chose the class name to hold the locations entered in the site in the name of "Positions" due to some<br>
+    programming considerations and circumstances.<br>
+    *i decided to split the routes files to 2:<br>
+    -index:<br>
+    which will hold all the forms post requests and the get requests for each page.<br>
+    -api:<br>
+    which will hold the requests (post/delete) for each ajax that we use on the client side<br>
+    (on the weather.js)<br>
+    <br>
+    i decided to use 3 ajax:<br>
+    1.for getting all the positions of the current email (on the load of the site).<br>
+    2.for adding a new position (location).<br>
+    3.for deleting a selected location OR all the locations, explained:<br>
+    for deleting a location we will send his id, for deleting all the locations we will send -1<br>
+    which will promise us that it will happen in a safe and on the right way.<br>
+    + as instructed (but not really needed) we will return the complete json of the database<br>
+    after each fetch, and rebuild the locations list.<br><br>
+
+
+
+
+
+<br>
+<br><br>
+<h2>Ex.3 Readme</h2>
+<p>This site will have a form to create new locations holding their name, latitude and longitude <br><br>
+    the verification of the fields will include:<br>*Cant have more than one location with the same name.<br>
+    *Latitude needs to be a number in the range [90,-90].<br>*Longitude needs to be a number in the range [180,-180].<br>
+    *Neither the name the latitude or the longitude fields cant be empty.<br><br>
+    after pressing the create button with valid values, a new dropdown item will be added to the list.<br>
+    than you can choose it and use the "Display Forecast" button to display forecast, <br>or use the "Remove Location" button to delete the current location on the dropdown list.<br><br>
+    I designed the site in a way that if you press on the "Display Forecast" button, two<br>
+    more buttons (grey buttons) will show up, "Clear Forecast" and "Icon Definition". "Clear Forecast" button <br> will erase the current forecast
+    display and will remove this new buttons, "Icon Definition" button <br> will show a table
+    which holds the description of each weather icon and explains which kind of weather he relates to,<br> on the icon definition display
+    there will be another button "Back To Forecast Page" which will help<br> you go back to the forecast page.<br>
+    <br>*as required, if the site wont return the image, another image will be loaded<br> displaying the error.
+    <br><br>*i programmed the "Remove location" button only to remove the location from the list and container,<br>
+    and not to erase all the current forecast, that is not his job.<br> this is why i added the "Clear Forecast" button
+    that deals only with clearing the forecast that is displayed.</p>
+
+
+<address>Submitted 20 January 2021 </address>
+</body>
+</html>

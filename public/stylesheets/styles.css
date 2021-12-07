@@ -1,0 +1,63 @@
+body{
+    margin:30px;
+}
+.main-header{
+    text-align: center;
+}
+.keep-flex{
+    align-self:flex-start;
+}
+.head{
+    background: lightgrey;
+    border-radius: 8px;
+}
+.block{
+    background: #e9ecef;
+    border-radius: 8px;
+}
+.error-list{
+    display:none;
+    background: #ffacac;
+    border-radius: 8px;
+}
+.personal-info-list{
+    display:none;
+    background: #b6dffd;
+    border-radius: 8px;
+}
+.hidden{
+    display:none;
+}
+.forecast-buttons{
+    background-color : grey;
+    color : white;
+    border-color: black;
+    border-width: 2px;
+}
+.drop-down-label{
+    font-size: 25px;
+    font-weight: 600;
+}
+.drop-down-button{
+    background-color: #e9ecef;
+}
+.weather-block{
+    class : col-md-1 col-lg-1 col-xl-1 col-sm-12 col-12 container-fluid;
+    display:inline-block;
+    background-color : #b6dffd;
+    border-radius: 8px;
+    border-style: outset;
+    border-color: black;
+    padding: 10px 10px 10px 10px;
+}
+.error-color{
+    color: red;
+}
+.success-registration{
+    color: snow;
+    font-size: large;
+}
+.logout{
+    color: darkblue;
+    font-size: large;
+}
