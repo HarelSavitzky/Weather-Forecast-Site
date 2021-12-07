@@ -1,7 +1,8 @@
 A small project during the first course of internet programming.
 using node.js express with JavaScript, HTML, CSS ,SQLite.
 
-the website allows registration, than saving locations for each user - we can view the location forecast when fetching it from an external API.
+the website allows user registration, than saving locations for the specific user - we can view the location forecast when fetching it from an external API.
+this was my first experiance of client/host communication! and i liked it! :)
 
 for additional info, look for the readme file in the project folder.
 
